@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>
+	 About
+  </title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="KJ.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/
+	font-awesome.min.css">
+ <body>
+    <nav>
+	  <label class="logo"><span>GetNewJob</span></label>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="html/model.jpg" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder="Enter Email" name="email" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1;height:40px">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="padding:10px;margin:10px">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    </nav>
+   <div class="moon">
+    <h1>
+      Get hired
+    </h1>
+    <h1>
+      by the popular
+    </h1>
+    <h1>
+      teams
+    </h1>
+   </div>
+   <div class=" sun">
+    <p>Find jobs according to your interest by clicking on the search
+    </p>
+    <p>
+      and click the category according to the skills
+    </p>
+   </div>
+    <div id="searchbox">
+      <input placeholder="Search" type="text"> 
+    </div>
+    <h2> 
+      Contact Us
+    </h2>
+    <div class="icon-bar">
+      <a href="#" class="microsoft"><i class="fab fa-facebook "></i></a> 
+      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+      <a href="#" class="google"><i class="fa fa-google"></i></a> 
+      <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> 
+    </div>
+  </body>
+  </head>
+  </html>
